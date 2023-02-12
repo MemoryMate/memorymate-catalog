@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryMates</title>
+    <link rel="stylesheet" href="../css/styles.css?v=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 55% 50%;
+      grid-gap: 10px;
+      margin-top: 130px!important;
+    }
+
+    .grid-item {
+      /* background-color: lightgray; */
+      /* border: 1px solid black; */
+      padding: 20px;
+      text-align: center;
+    }
+    .right{
+        padding-right: 100px;
+    }
+    /* #smallvid{
+        display: none;
+    } */
+    @media only screen and (max-width: 1080px) {
+        .grid-container {
+          grid-template-columns: auto;
+        }
+        .grid-item, .video-container {
+            margin: 0px 50px;
+        }
+        .right{
+            padding-right: 0px;
+        }
+        .video-container iframe{
+            width: calc(100% - 50px)!important;
+        }
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        margin: 0px 0px 0px 50px;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 767px) {
+        .video-container {
+          padding-bottom: 75%;
+        }
+      }
+  </style>
+<body>
+    <div id="container" class="container">
+        <header>
+
+            <nav class="topnav" id="myTopnav">
+                <img id="logo" class ="logo" src="../img/Logo.png">
+                <div class='nav-container'>
+
+
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                
+            </nav>
+        </header>
+        
+        <div class="socialbar">
+            <a target="_blank" class="github" href="https://github.com/NickDeLu">
+                <i class="fa fa-square fa-stack-1x outside"></i>
+                <i class="fa fa-github-square fa-stack-1x inside"></i>
+            </a>
+            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/nickdelu/">
+                <i class="fa fa-square fa-stack-1x outside"></i>
+                <i class="fa fa-linkedin-square fa-stack-1x inside"></i>
+            </a>
+        </div>
+        
+        <section class="grid-container">
+            <div class="subtitle"  style = "text-align: left; padding-left: 50px;">Hackville 2023 Submission</div><br>
+            <div class="grid-item " style="padding: 0; margin:0;">
+                <div class="video-container">
+
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                       src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaWDx4NvM&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                     </iframe>
+                   </div>
+                   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaWDx4NvM&#x2F;view?utm_content=DAFaWDx4NvM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Memory Mates</a>
+                </div>
+                <div style="text-align: left; padding-left: 50px;"> 
+                    <a href="https://github.com/MemoryMate" target="_new"><img src="https://img.shields.io/badge/Github%20Organization-181717.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Github"></a>
+                    <a href="https://devpost.com/software/memory-mates" target="_new"><img src="https://img.shields.io/badge/Devpost-008080.svg?style=for-the-badge&amp;logo=devpost&amp;logoColor=white" alt="Devpost"></a>
+                    <a href="https://www.figma.com/file/4xsJuxk1QOdl8Nm0CLKYML/Real-Deal?node-id=0%3A1&t=OWRbQkB34Udlb6Om-1" target="_new"><img src="https://img.shields.io/badge/Figma-FF7C00.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white" alt="Figma"></a>
+                </div>
+                <br>
+            </div>
+           
+            <div class="grid-item right" style = "text-align: left;">
+                <h1 class="title" style = "text-align: left"><a target = "_blank" style="text-decoration: none; color: white; font-family: Open Sans, sans-serif;" href="https://github.com/MemoryMate">Memory Mates</a> <i style="font-size: 30px;" class="fa fa-link"></i></h1> 
+                <div class="mini-text">A native iOS application that helps caregivers better ensure their loved ones are on track with their daily responsibilities through push notification reminders. Particularly targeted for those who suffer from dementia, Alzheimer's, or other memory-related illnesses.
+                    Memory Mates removes the technical barrier of the typical reminder app by outsourcing the setup to a loved one or caregivers. </div>
+                <br>
+                <div class="subtitle"  style = "text-align: left">What tools it uses</div><br>
+                <img src="https://img.shields.io/badge/Adobe%20Figma-black.svg?style=for-the-badge&amp;logo=Figma&amp;logoColor=white" alt="Adobe Figma">
+                <img src="https://img.shields.io/badge/SwiftUI-FFAC45.svg?style=for-the-badge&amp;logo=Swift&amp;logoColor=white" alt="SwiftUI">
+                <img src="https://img.shields.io/badge/Xcode-1575F9.svg?style=for-the-badge&amp;logo=Xcode&amp;logoColor=white" alt="Xcode">
+                <img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&amp;logo=GitHub&amp;logoColor=white" alt="GitHub">
+                <img src="https://img.shields.io/badge/GitHub%20Pages-181717.svg?style=for-the-badge&amp;logo=GitHub&amp;logoColor=white" alt="GitHub Pages">
+                <img src="https://img.shields.io/badge/nodejs-339933.svg?style=for-the-badge&amp;logo=Node.js&amp;logoColor=white" alt="nodejs">
+                <img src="https://img.shields.io/badge/express-191919.svg?style=for-the-badge&amp;logo=express&amp;logoColor=white" alt="express">
+                <img src="https://img.shields.io/badge/Mongoose%20Atlas-47A248.svg?style=for-the-badge&amp;logo=MongoDB&amp;logoColor=white" alt="Mongoose Atlas">
+                <img src="https://img.shields.io/badge/Twilio-7C4DFF.svg?style=for-the-badge&amp;logo=Twilio&amp;logoColor=white" alt="Twilio">
+                <img src="https://img.shields.io/badge/Apple%20Push%20Notification%20Service-1715FF.svg?style=for-the-badge&amp;logo=Apple&amp;logoColor=white" alt="Apple Push Notification Service">                <br>
+                <br>
+                <div class="subtitle"  style = "text-align: left">How we built it</div>
+                <p class="mini-text">Memory Mates was first conceptualized in Adobe Figma into wireframes that were then translated into views in a SwiftUI native IOS mobile application. Xcode among other tools such as <b>GitHub</b> were used for development and source control with this project showcase hosted on <b>Github Pages</b>. The backend behind Memory Mates is a nodejs express api connected to a <b>Mongoose Atlus database</b>. For sending invites to your mates, we used <b>Twilios SMS messaging API</b> service to send text messages to the person of your choice and provide a custom signup link just for them. Finally, we utilized Apple Push Notification service to send push notifications directly to your device in real-time to power our reminder service.</p>      
+                   
+            </div>
+            <div class="subtitle"  style = "text-align: left; padding-left: 50px;">Figma Designs</div><br>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; max-width: 970px; margin-left: 50px;
+                    padding-bottom: 0; padding-left:100px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                        <iframe  style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4xsJuxk1QOdl8Nm0CLKYML%2FReal-Deal%3Fnode-id%3D0%253A1%26t%3DOWRbQkB34Udlb6Om-1" allowfullscreen></iframe>
+
+                   </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
