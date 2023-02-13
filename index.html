@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MemoryMates</title>
-    <link rel="stylesheet" href="./css/styles.css?v=1">
+    <title>Memory Mates</title>
+    <link rel="stylesheet" href="css/styles.css?v=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,7 +64,7 @@
 
       @media (max-width: 767px) {
         .video-container {
-          padding-bottom: 75%;
+          /* padding-bottom: 75%; */
         }
       }
   </style>
@@ -73,9 +73,10 @@
         <header>
 
             <nav class="topnav" id="myTopnav">
-                <img id="logo" class ="logo" src="./img/Logo.png">
+                <img id="logo" class ="logo" src="./img/Logo.png" style="padding:12px">
                 <div class='nav-container'>
-
+                    <a class="scroll" href="https://hackville2023.devpost.com/" target="_blank">[ h a c k v i l l e ]</a>
+                    <a class="scroll" href="#" onclick="window.history.back(); return false;"> <i class="fa fa-arrow-left"></i> &nbsp;Back</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
                     <i class="fa fa-bars"></i>
@@ -96,7 +97,8 @@
         </div>
         
         <section class="grid-container">
-            <div class="subtitle"  style = "text-align: left; padding-left: 50px;">Hackville 2023 Submission</div><br>
+            <div class="subtitle"  style = "text-align: left; padding-left: 50px;"><span>Hackville 2023 Submission</span><br><img src="https://img.shields.io/badge/Winner-%23FFC107.svg?style=for-the-badge&logo=None&logoColor=white&labelColor=%23333&label=&color=%23FFC107" alt="Winner" height="30" style="border-radius: 5px; ">
+                Most Creative Use of Twilio</div><br>
             <div class="grid-item " style="padding: 0; margin:0;">
                 <div class="video-container">
 
@@ -107,7 +109,6 @@
                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaWDx4NvM&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
                      </iframe>
                    </div>
-                   <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaWDx4NvM&#x2F;view?utm_content=DAFaWDx4NvM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Memory Mates</a>
                 </div>
                 <div style="text-align: left; padding-left: 50px;"> 
                     <a href="https://github.com/MemoryMate" target="_new"><img src="https://img.shields.io/badge/Github%20Organization-181717.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Github"></a>
@@ -139,7 +140,7 @@
                    
             </div>
             <div class="subtitle"  style = "text-align: left; padding-left: 50px;">Figma Designs</div><br>
-                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; max-width: 970px; margin-left: 50px;
+                <div class="video-container" style="position: relative; height: 0; padding-top: 56.2500%; max-width: 970px;
                     padding-bottom: 0; padding-left:100px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
                     border-radius: 8px; will-change: transform;">
                         <iframe  style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4xsJuxk1QOdl8Nm0CLKYML%2FReal-Deal%3Fnode-id%3D0%253A1%26t%3DOWRbQkB34Udlb6Om-1" allowfullscreen></iframe>
@@ -148,6 +149,6 @@
             </div>
         </section>
     </div>
-
 </body>
+<script src="js/index.js"></script>
 </html>
