@@ -86,11 +86,11 @@
         </header>
         
         <div class="socialbar">
-            <a target="_blank" class="github" href="https://github.com/NickDeLu">
+            <a id="githublink" target="_blank" class="github" href="https://github.com/NickDeLu">
                 <i class="fa fa-square fa-stack-1x outside"></i>
                 <i class="fa fa-github-square fa-stack-1x inside"></i>
             </a>
-            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/nickdelu/">
+            <a id="linkedinlink" target="_blank" class="linkedin" href="https://www.linkedin.com/in/nickdelu/">
                 <i class="fa fa-square fa-stack-1x outside"></i>
                 <i class="fa fa-linkedin-square fa-stack-1x inside"></i>
             </a>
@@ -150,5 +150,18 @@
         </section>
     </div>
 </body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const githubURL = urlParams.get('github');
+    const linkedinURL = urlParams.get('linkedin');
+    const githublink = document.getElementById('githublink');
+    const linkedinlink = document.getElementById('linkedinlink');
+    console.log("setting giturl to", githubURL)
+    console.log("setting linkedinurl to", linkedinURL)
+    console.log(githublink)
+    if(githubURL)     githublink.href = githubURL
+
+    if(linkedinURL) linkedinlink.href = linkedinURL;
+  </script>
 <script src="js/index.js"></script>
 </html>
